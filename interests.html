@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>interests.html</title>  
+    <!--FontAwesome link for footer icons-->
+    <script src="https://use.fontawesome.com/d3b7bc5f60.js"></script>
+    <!-- Bootstrap link for styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <section class="container">
+      <header>
+        <h1>Other interests</h1>
+        <!--Header image-->
+        <img src="Images/background2.JPG" class="img-fluid" alt="headerimage">
+        
+        <!--Navbar styled with Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!--Link to portfolio: appears when screen reduced to minimum width-->
+          <a class="navbar-brand" href="projects.html">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+          <!--Nav bar ul list-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+              </li>
+              <!--About: dropdown menu-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="about.html">About</a>
+                  <a class="dropdown-item" href="projects.html">Projects</a>
+                  <a class="dropdown-item" href="interests.html">Other interests</a>
+                </div>
+              </li>
+              <!--Continuity of navbar ul list-->
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
+              </li>
+            </ul>
+            <!--Search bar-->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      
+      <section>
+        <h2>Baking</h2>
+        <!--Card group for each item: photo, caption, and link to recipe-->
+        <section class="card-deck">
+          <!--First card-->
+          <article class="card">
+            <img class="card-img-top" src="Images/cakepop.png" alt="Cake pop">
+            <div class="card-body">
+              <h4 class="card-title">Cake Pop with Rainbow Sprinkles</h4>
+              <p class="card-text">This recipe is time consuming and demands several ingredients. However, the result is worth the time and effort.</p>
+              <!--Button for recipe-->
+              <a href="#" class="btn btn-primary">Recipe</a>
+            </div>
+          </article>
+          <!--Second card-->
+          <article class="card">
+            <img class="card-img-top" src="Images/pie.png" alt="Berry Pie">
+            <div class="card-body">
+              <h4 class="card-title">Berry Pie</h4>
+              <p class="card-text">This recipe is time consuming and demands several ingredients. However, the result is worth the time and effort.</p>
+              <!--Button for recipe-->
+              <a href="#" class="btn btn-primary">Recipe</a>
+            </div>
+          </article>
+          <!--Third card-->
+          <article class="card">
+            <img class="card-img-top" src="Images/berrypie.png" alt="Berry Pie with Twist top">
+            <div class="card-body">
+              <h4 class="card-title">Berry Pie with Twist Top</h4>
+              <p class="card-text">This recipe is identical to the regular pie, except the top is made with a twist.</p>
+              <!--Button for recipe-->
+              <a href="#" class="btn btn-primary">Recipe</a>
+            </div>
+          </article>
+          <!--Fourth card-->
+          <article class="card">
+            <img class="card-img-top" src="Images/cheesecake.png" alt="Cake pop">
+            <div class="card-body">
+              <h4 class="card-title">Plain Cheesecake with Strawberry Compote</h4>
+              <p class="card-text">This recipe is very time consuming. However, the result is worth the time and effort.</p>
+              <!--Button for recipe-->
+              <a href="#" class="btn btn-primary">Recipe</a>
+            </div>
+          </article>
+          <!--Fifth card-->
+          <article class="card">
+            <img class="card-img-top" src="Images/chocmuffins.png" alt="Chocolate Muffins">
+            <div class="card-body">
+              <h4 class="card-title">Chocolate Muffins with Vanilla Icing</h4>
+              <p class="card-text">This recipe is very simple and very quickly made.</p>
+              <!--Button for recipe-->
+              <a href="#" class="btn btn-primary">Recipe</a>
+            </div>
+          </article>
+        </section>
+      </section>
+      
+      <footer>
+        <!--Last modified & fontawesome icons-->
+        <blockquote class="blockquote text-center">
+          <small class="text-muted">&copy; 2017 || Vidya Krishnan || Last modified on <time datetime="2017-12-13">December 13 2017</time></small>
+          <section class="mb-0">
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </section>
+        </blockquote>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!--Portfolio link, which appears when screen reduced to minimum width-->
+          <a class="navbar-brand" href="projects.html">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          
+          <!--Nav bar ul list-->
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+              </li>
+              <!--About: dropdown menu-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About</a>
+                  <a class="dropdown-item" href="projects.html">Projects</a>
+                  <a class="dropdown-item" href="interests.html">Other interests</a>
+                </div>
+              </li>
+              <!--Continuity of navbar ul list-->
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
+              </li>
+            </ul>
+            <!--Search bar-->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </footer>
+    </section>
+    
+    <!-- jQuery links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
