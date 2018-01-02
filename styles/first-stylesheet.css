@@ -1,9 +1,12 @@
+/* Colors for all the pages:
+Header & Footer background: #ccccff
+Main article background: #e6e6ff*/
+
 /* Body styles */
-body{
-  margin: 0;
-  padding: 0;
+body {
   font-family: "Arial", Arial, sans-serif;
-  background-color: rgba(63,142,191,0.2);
+  font-weight: 400;
+  background-color: #f5f9eb;
 }
 
 /*Background image styles*/
@@ -30,7 +33,6 @@ section.content-wrapper{
   width: 100vmax;
   height: 100vmin;
   min-width: 100vmin;
-  text-align: center;
   position: absolute;
 }
 
@@ -38,36 +40,39 @@ p{
   padding: 0.25em;
 }
 
-/*Header1, with use of first GoogleFont*/
+/*Header1, with use of GoogleFont*/
 h1{
-  margin:auto;
   float: left;
-  padding: 2em 4em 0em 4em;
-  font-size: 38px;
+  padding: 2em;
+  font-size: 2.4rem;
   font-family: 'Amita', cursive;
 } 
 
-h2{
-  margin:auto;
-  clear: both;
-  float: left;
-  padding: 0em 1em 1em 0em;
-  font-size: 24px;
-  font-family: 'Amita', cursive;
+/* After 584px, logo and h1 have reduced padding, margins, and h1 goes to the next line */
+
+@media only screen and (max-width: 584px) {
+h1 {
+    clear: both;
+    float: left;
+    margin: 0 auto;
+    padding: 2%;
+  }
 }
+
 /*Main nav styles*/
 nav.main-nav{
-  float: right;
+    float: right;
   display: flex;
   justify-content:space-around;
-  padding: 2em 4em 2em 2em;
+width: 40%;
+  margin: 4.4em 2em;
 }
 
 /*All navigation styles*/
 a.nav:link{
   color:blue;
   font-size: 16px;
-  padding: 4px;
+  padding: 0.75em;
   text-decoration: none;
   font-weight: bold;
 }
@@ -78,6 +83,35 @@ a.nav:visited{
 a.nav:hover{
   color: darkblue;
 }
+
+/* Float the elements, center link content, width on links, set font color */
+
+.main-nav a {
+  float: left;
+  width: 13.2%; 
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold; 
+}
+
+/* Extra padding on first nav link */
+
+.main-nav a:first-of-type {
+  padding-left: 6%;
+}
+
+/*
+h2{
+  margin:auto;
+  clear: both;
+  float: left;
+  padding: 0em 1em 1em 0em;
+  font-size: 24px;
+  font-family: 'Amita', cursive;
+}
+*/
 
 /*index.html and projects.html article styles*/
 article.wrapper{
@@ -290,8 +324,8 @@ section.end-about{
 
 /*Last nav styles*/
 nav.last-nav{
-  float: right;
+    float: right;
   display: flex;
   justify-content:space-around;
-  padding: 0em 4em 2em 2em;
+  padding: 4.8em 2em;
 }
