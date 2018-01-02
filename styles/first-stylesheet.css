@@ -43,21 +43,10 @@ p{
 /*Header1, with use of GoogleFont*/
 h1{
   float: left;
-  padding: 2em;
+  margin: 1.8em 2em 1em 2em;
   font-size: 2.4rem;
   font-family: 'Amita', cursive;
 } 
-
-/* After 584px, logo and h1 have reduced padding, margins, and h1 goes to the next line */
-
-@media only screen and (max-width: 584px) {
-h1 {
-    clear: both;
-    float: left;
-    margin: 0 auto;
-    padding: 2%;
-  }
-}
 
 /*Main nav styles*/
 nav.main-nav{
@@ -65,7 +54,7 @@ nav.main-nav{
   display: flex;
   justify-content:space-around;
 width: 40%;
-  margin: 4.4em 2em;
+  margin: 4em 2em 1em 2em;
 }
 
 /*All navigation styles*/
@@ -85,10 +74,9 @@ a.nav:hover{
 }
 
 /* Float the elements, center link content, width on links, set font color */
-
 .main-nav a {
   float: left;
-  width: 13.2%; 
+  width: 13%; 
   padding: 0.5rem;
   color: black;
   text-decoration: none;
@@ -97,7 +85,6 @@ a.nav:hover{
 }
 
 /* Extra padding on first nav link */
-
 .main-nav a:first-of-type {
   padding-left: 6%;
 }
@@ -113,21 +100,61 @@ h2{
 }
 */
 
-/*index.html and projects.html article styles*/
-article.wrapper{
-  clear: both;
-  float: left;
+/*index.html article styles*/
+article.wrapperone{
+  width: 80%;
+    float: left;
   text-align: left;
-  text-indent: 6em;
-  padding: 10px;
-  border: 10px;
-  margin:34px 60px 20px 60px;
-  text-align: justify;
+  text-indent: 1em;
+  margin: 1em 9em 1em 9em; 
+  text-align: left;
+  text-align: justify;   
 } 
+
+p.index{
+  line-height: 1.5em;
+  padding: 2em 0em 2em 0em;
+}
+
+/* Float all of the grid divs */
+section[class^='span_']  {
+      float: left;
+      margin: 1%;
+    }
+
+/* Clear floats after each row */
+section[class^='span_']:first-child {
+  clear: both;
+}
+
+/*  GRID OF SIX */
+.span_6_of_6 {
+	width: 97%;
+}
+
+.span_5_of_6 {
+  	width: 81.16%;
+}
+
+.span_4_of_6 {
+  	width: 64.33%;
+}
+
+.span_3_of_6 {
+  	width: 47.5%;
+}
+
+.span_2_of_6 {
+  	width: 30.66%;
+}
+
+.span_1_of_6 {
+  	width: 13.83%;
+}
 
 /*index.html p styles*/
 p.index{
-  line-height: 1.15em;
+  line-height: 1.5em;
   padding: 2em 0em 2em 0em;
 }
 
@@ -146,17 +173,6 @@ p.about{
   line-height: 1.15em;
   padding: 0.5em 0em 0.5em 0em;
   text-indent: 1em;
-}
-
-/*about.html article and section styles*/
-article.wrapperone{
-  float: left;
-  text-align: left;
-  text-indent: 20px;
-  padding: 10px;
-  border: 10px;
-  margin: 10px 60px 20px 8.75em;
-  text-align: justify;  
 }
 
 .edu{
@@ -262,27 +278,6 @@ section.contact{
   margin: 4em 28em 4em 28em;
 }
 
-/*
-
-figure {
-  clear: both;
-  float: left;
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-}
-
-figcaption {
-  position: static;
-  display: block;
-  padding: 30px;
-  width: 10%;
-  height: auto;
-  font-size: 10px;
-}
-*/
-
-
 /*Article for copyright and last modified styles. Use of second GoogleFont*/
 article.footer{
   clear: both;
@@ -296,30 +291,16 @@ article.footer{
 
 /*FontAwesome styles*/
 i{
-  clear: both;
   height: 10%;
   width: 10%;
-  padding: 6px 6px;
-  margin: 1em 1em 1em 0em; 
+  padding: 2em 0.5em 2em 0.5em;
 }
 
 /*index.html and projects.html footer section styles*/
 section.end{
-  display: block;
-  position: relative;
-  bottom: 0;
-  margin-left: 32.5em;
-  margin-right: 32.5em;
-}
-
-/*about.html and contact.html footer section styles*/
-section.end-about{
-  clear: both;
-  display: block;
-  position: relative;
-  bottom: 0;
-  margin-left: 32.5em;
-  margin-right: 32.5em; 
+    clear: both;
+  margin-left: 41em;
+  margin-right: 30em;
 }
 
 /*Last nav styles*/
@@ -327,5 +308,28 @@ nav.last-nav{
     float: right;
   display: flex;
   justify-content:space-around;
-  padding: 4.8em 2em;
+width: 40%;
+  margin: 1em 2em 1em 2em;
+}
+/*All navigation styles*/
+a.nav:link{
+  color:blue;
+  font-size: 16px;
+  padding: 0.75em;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Float the elements, center link content, width on links, set font color */
+.last-nav a {
+  float: left;
+  width: 13%; 
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold; 
+}
+/* Extra padding on last nav link */
+.last-nav a:first-of-type {
+  padding-left: 6%;
 }
