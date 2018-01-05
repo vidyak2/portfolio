@@ -4,127 +4,98 @@ Main article background: #e6e6ff*/
 
 /* Body styles */
 body {
-  font-family: "Arial", Arial, sans-serif;
-  font-weight: 400;
-  background-color: #f5f9eb;
+    font-family: "Arial", Arial, sans-serif;
+    font-weight: 400;
+    background-color: #f5f9eb;
 }
 
 /*Background image styles*/
 img.back{
-  width: 100vmax;
-  min-width: 100vmin;
-  opacity: 0.2;
-  position: absolute;
+    width: 100vmax;
+    min-width: 100vmin;
+    opacity: 0.2;
+    position: absolute;
 }
 
 /*General styles*/
 .clearfix:after{
-  content:"";
-  display: block;
-  clear: both;
+    content:"";
+    display: block;
+    clear: both;
 }
 
 .clear{
-  clear: both;
+    clear: both;
 }
 
-section.content-wrapper{ 
-  display: inline-block;
-  width: 100vmax;
-  height: 100vmin;
-  min-width: 100vmin;
-  position: absolute;
+section.content-wrapper{
+    display: inline-block;
+    position: absolute;
+    width: 100vmax;
+    min-width: 100vmin;
+    height: 100vmax;
+    min-height: 100vmin;
 }
 
 p{
-  padding: 0.25em;
+    padding: 0.25em;
 }
 
 /*Header1, with use of GoogleFont*/
 h1{
-  float: left;
-  margin: 1.8em 2em 1em 2em;
-  font-size: 2.4rem;
-  font-family: 'Amita', cursive;
+    float: left;
+    margin: 1.8em 2em 0.5em 2em;
+    font-size: 2.4rem;
+    font-family: 'Amita', cursive;
 } 
 
 /*Main nav styles*/
 nav.main-nav{
     float: right;
-  display: flex;
-  justify-content:space-around;
-width: 40%;
-  margin: 4em 2em 1em 2em;
+    display: flex;
+    justify-content:space-around;
+    width: 40%;
+    margin: 4em 2em 1em 2em;
 }
 
 /*All navigation styles*/
 a.nav:link{
-  color:blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
+    color:blue;
+    font-size: 16px;
+    padding: 0.75em;
+    text-decoration: none;
+    font-weight: bold;
 }
 a.nav:visited{
-  color:black;
+    color:black;
 }
 
 a.nav:hover{
-  color: darkblue;
+    color: darkblue;
 }
 
 /* Float the elements, center link content, width on links, set font color */
 .main-nav a {
-  float: left;
-  width: 13%; 
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold; 
+    float: left;
+    width: 13%; 
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold; 
 }
 
 /* Extra padding on first nav link */
 .main-nav a:first-of-type {
-  padding-left: 6%;
+    padding-left: 6%;
 }
 
-/*
 h2{
-  margin:auto;
-  clear: both;
-  float: left;
-  padding: 0em 1em 1em 0em;
-  font-size: 24px;
-  font-family: 'Amita', cursive;
-}
-*/
-
-/*index.html article styles*/
-article.wrapperone{
-  width: 80%;
+    clear: both;
     float: left;
-  text-align: left;
-  text-indent: 1em;
-  margin: 1em 9em 1em 9em; 
-  text-align: left;
-  text-align: justify;   
-} 
-
-p.index{
-  line-height: 1.5em;
-  padding: 2em 0em 2em 0em;
-}
-
-/* Float all of the grid divs */
-section[class^='span_']  {
-      float: left;
-      margin: 1%;
-    }
-
-/* Clear floats after each row */
-section[class^='span_']:first-child {
-  clear: both;
+    margin: 0em 0em 1em 0em;
+    font-size: 24px;
+    font-family: 'Amita', cursive;
 }
 
 /*  GRID OF SIX */
@@ -152,184 +123,236 @@ section[class^='span_']:first-child {
   	width: 13.83%;
 }
 
-/*index.html p styles*/
-p.index{
-  line-height: 1.5em;
-  padding: 2em 0em 2em 0em;
+article.head{
+    padding: 2em;
+    margin: 6em 6em 6em 6em;   
 }
 
-/*projects.html p styles*/
-p.projects{
-  clear: both;
-  float: left;
-  line-height: 1.15em;
-  padding: 0em 0em 2em 0em;
-  text-indent: 6em;
+article.wrapper{
+    padding: 2em;
+    margin: 0em 0em 0em 4em;  
 }
 
-p.about{
-  clear: both;
-  float: left;
-  line-height: 1.15em;
-  padding: 0.5em 0em 0.5em 0em;
-  text-indent: 1em;
-}
+/*index.html article styles*/
+/*
+article.wrapperone{
+    width: 80%;
+    float: left;
+    text-align: justify; 
+    text-indent: 1em;
+    margin: 1em 9em 1em 9em;   
+} 
+*/
 
-.edu{
-  float: left;
-  line-height: 1.15em;
-  padding: 2em 0em 2em 0em;
-}
-
-.tech, .hob{
-  line-height: 1.15em;
-}
-
-section.tech{
-  1em 1em 1em 1em;
-}
-
-section.hob{
-  padding: 28.7em 1em 1em 1em;
-}
-
-/*about.html ordered and unordered list styles*/
-ul{
-  list-style: none;
-  clear: both;
-  float: left;
-}
-
-li.u::before{
-  content: "•";
-  color: black;
-  padding: 0em 1.4em 0em 0em;
-  text-align: right;
-  direction: rtl;
-}
-
-ol{
-  list-style: none;
-  counter-reset: li;
-  clear: both;
-  float: left;
-}
-
-li.o::before{
-  content: counter(li);
-  color: black;
-  display: inline-block;
-  width: 1em;
-  margin-left: 1em;
-  text-align: right;
-  direction: rtl;
-}
-
-li{
-  counter-increment: li;
+/* Float all of the grid divs */
+div[class^='span_']{ 
+    float: left;
+    margin: 1%;
 }
 
 /*projects.html image floats and styles*/
-.one, .two, .three {
+.one, .two, .four {
   float: left;
+}
+
+.five {
+  clear: both;
+    margin: 0;
+    padding: 0;
+    
+}  
+
+.seven {
+  clear: both;
+}
+
+.eight, .nine {
+  float: left;
+}  
+
+.one, .two, .four, .five, .six, .seven, .eight, .nine { 
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+figcaption{
+    clear: both;
+    float: left;
+    margin: 0em 4em 0em 6em;
 }
 
 .four{
-  clear: both;
+    height: 15em;
 }
 
-.four, .five, .six {
-  float: left;
-}  
+/*index.html p styles*/
+/*
+p.index{
+    line-height: 1.5em;
+    padding: 2em 0em 2em 0em;
+}
+*/
 
-.seven{
-  clear: both;
+/*projects.html p styles*/
+
+p.projects{
+    clear: both;
+    float: left;
+    line-height: 1.15em;
+    padding: 0em 0em 2em 0em;
+    text-indent: 6em;
 }
 
-.seven, .eight, .nine {
-  float: left;
-}  
-
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine { 
-  height:120px;
-  width:120px;
-  margin: 1em 1em 1em 6em;
-  padding: 4px;
-  display: block;
+/*
+p.about{
+    clear: both;
+    float: left;
+    line-height: 1.15em;
+    padding: 0.5em 0em 0.5em 0em;
+    text-indent: 1em;
 }
 
-section.photos{
-  margin: 2em 8em 2em 8em;
+.edu{
+    float: left;
+    line-height: 1.15em;
+    padding: 2em 0em 2em 0em;
 }
+
+.tech, .hob{
+    line-height: 1.15em;
+}
+
+section.tech{
+    1em 1em 1em 1em;
+}
+
+section.hob{
+    padding: 28.7em 1em 1em 1em;
+}
+*/
+
+/*about.html ordered and unordered list styles*/
+/*
+ul{
+    list-style: none;
+    clear: both;
+    float: left;
+}
+
+li.u::before{
+    content: "•";
+    color: black;
+    padding: 0em 1.4em 0em 0em;
+    text-align: right;
+    direction: rtl;
+}
+
+ol{
+    list-style: none;
+    counter-reset: li;
+    clear: both;
+    float: left;
+}
+
+li.o::before{
+    content: counter(li);
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em;
+    text-align: right;
+    direction: rtl;
+}
+
+li{
+    counter-increment: li;
+}
+*/
 
 /*contact.html section styles*/
+/*
 section.contact{
-  clear: both;
-  float: left;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 220px;
-  text-align: center;
-  border-radius: 5px;
-  padding: 4em;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  margin: 4em 28em 4em 28em;
+    clear: both;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4em;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    margin: 4em 28em 4em 28em;
 }
+*/
 
 /*Article for copyright and last modified styles. Use of second GoogleFont*/
+/*
 article.footer{
-  clear: both;
-  float: left;
-  font-size: 10px;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-  font-family: 'Merienda', cursive;
+    clear: both;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    font-family: 'Merienda', cursive;
 }
+*/
 
 /*FontAwesome styles*/
+/*
 i{
-  height: 10%;
-  width: 10%;
-  padding: 2em 0.5em 2em 0.5em;
+    height: 10%;
+    width: 10%;
+    padding: 2em 0.5em 2em 0.5em;
 }
+*/
 
 /*index.html and projects.html footer section styles*/
+/*
 section.end{
     clear: both;
-  margin-left: 41em;
-  margin-right: 30em;
+    margin-left: 41em;
+    margin-right: 30em;
 }
+*/
 
 /*Last nav styles*/
+/*
 nav.last-nav{
     float: right;
-  display: flex;
-  justify-content:space-around;
-width: 40%;
-  margin: 1em 2em 1em 2em;
+    display: flex;
+    justify-content:space-around;
+    width: 40%;
+    margin: 1em 2em 1em 2em;
 }
+*/
 /*All navigation styles*/
+/*
 a.nav:link{
-  color:blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
+    color:blue;
+    font-size: 16px;
+    padding: 0.75em;
+    text-decoration: none;
+    font-weight: bold;
 }
+*/
 /* Float the elements, center link content, width on links, set font color */
+/*
 .last-nav a {
-  float: left;
-  width: 13%; 
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold; 
+    float: left;
+    width: 13%; 
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold; 
 }
+*/
 /* Extra padding on last nav link */
+/*
 .last-nav a:first-of-type {
-  padding-left: 6%;
-}
+    padding-left: 6%;
+}*/
