@@ -28,21 +28,16 @@ img.back{
     clear: both;
 }
 
-section.content-wrapper{
+article.content-wrapper{
     display: inline-block;
     position: absolute;
     width: 100vmax;
     min-width: 100vmin;
-    height: 100vmax;
-    min-height: 100vmin;
-}
-
-p{
-    padding: 0.25em;
 }
 
 /*Header1, with use of GoogleFont*/
 h1{
+    clear: both;
     float: left;
     margin: 1.8em 2em 0.5em 2em;
     font-size: 2.4rem;
@@ -90,15 +85,30 @@ a.nav:hover{
     padding-left: 6%;
 }
 
+article.main{
+    position: relative;
+    padding: 0em 0em 0em 10em;
+}
+
+/*Header 2 styles*/
 h2{
     clear: both;
     float: left;
-    margin: 0em 0em 1em 0em;
+    margin: 1em;
     font-size: 24px;
     font-family: 'Amita', cursive;
 }
 
-/*  GRID OF SIX */
+/*p.prpjects styles*/
+p.projects{
+    clear: both;
+    float: left;
+    line-height: 1.15em;
+    padding: 0em 1em 1em 1em;
+    text-indent: 2em;
+}
+
+/*  Grid of 6 system */
 .span_6_of_6 {
 	width: 97%;
 }
@@ -123,85 +133,16 @@ h2{
   	width: 13.83%;
 }
 
-article.head{
-    padding: 2em;
-    margin: 6em 6em 6em 6em;   
-}
-
-article.wrapper{
-    padding: 2em;
-    margin: 0em 0em 0em 4em;  
-}
-
-/*index.html article styles*/
-/*
-article.wrapperone{
-    width: 80%;
-    float: left;
-    text-align: justify; 
-    text-indent: 1em;
-    margin: 1em 9em 1em 9em;   
-} 
-*/
-
 /* Float all of the grid divs */
-div[class^='span_']{ 
+section[class^='span_']{ 
     float: left;
     margin: 1%;
 }
 
-/*projects.html image floats and styles*/
-.one, .two, .four {
-  float: left;
-}
-
-.five {
-  clear: both;
-    margin: 0;
-    padding: 0;
-    
-}  
-
-.seven {
-  clear: both;
-}
-
-.eight, .nine {
-  float: left;
-}  
-
+/*Adjust all images to fit 70% of their grid and to the same height*/
 .one, .two, .four, .five, .six, .seven, .eight, .nine { 
-    width: 75%;
-    display: block;
-    margin: auto;
-}
-
-figcaption{
-    clear: both;
-    float: left;
-    margin: 0em 4em 0em 6em;
-}
-
-.four{
-    height: 15em;
-}
-
-/*index.html p styles*/
-/*
-p.index{
-    line-height: 1.5em;
-    padding: 2em 0em 2em 0em;
-}
-*/
-
-/*projects.html p styles*/
-
-p.projects{
-    clear: both;
-    float: left;
-    line-height: 1.15em;
-    padding: 0em 0em 2em 0em;
-    text-indent: 6em;
+    height: 10em;
+    width: 45%;
 }
 
 /*
@@ -289,38 +230,31 @@ section.contact{
 */
 
 /*Article for copyright and last modified styles. Use of second GoogleFont*/
-/*
 article.footer{
     clear: both;
     float: left;
     font-size: 10px;
     text-align: center;
-    vertical-align: middle;
+    padding: 2em 0em 1em 0em;
     width: 100%;
     font-family: 'Merienda', cursive;
 }
-*/
 
 /*FontAwesome styles*/
-/*
 i{
     height: 10%;
     width: 10%;
-    padding: 2em 0.5em 2em 0.5em;
+    padding: 0.5em;
 }
-*/
 
 /*index.html and projects.html footer section styles*/
-/*
 section.end{
     clear: both;
     margin-left: 41em;
     margin-right: 30em;
 }
-*/
 
 /*Last nav styles*/
-/*
 nav.last-nav{
     float: right;
     display: flex;
@@ -328,9 +262,7 @@ nav.last-nav{
     width: 40%;
     margin: 1em 2em 1em 2em;
 }
-*/
 /*All navigation styles*/
-/*
 a.nav:link{
     color:blue;
     font-size: 16px;
@@ -338,9 +270,7 @@ a.nav:link{
     text-decoration: none;
     font-weight: bold;
 }
-*/
 /* Float the elements, center link content, width on links, set font color */
-/*
 .last-nav a {
     float: left;
     width: 13%; 
@@ -350,9 +280,28 @@ a.nav:link{
     text-align: center;
     font-weight: bold; 
 }
-*/
 /* Extra padding on last nav link */
-/*
+
 .last-nav a:first-of-type {
     padding-left: 6%;
-}*/
+}
+
+
+/*index.html article styles*/
+/*
+article.wrapperone{
+    width: 80%;
+    float: left;
+    text-align: justify; 
+    text-indent: 1em;
+    margin: 1em 9em 1em 9em;   
+} 
+*/
+
+/*index.html p styles*/
+/*
+p.index{
+    line-height: 1.5em;
+    padding: 2em 0em 2em 0em;
+}
+*/
