@@ -100,12 +100,13 @@ h2{
 }
 
 /*p.projects styles*/
-.projects, .index{
+.about, .projects, .index{
     clear: both;
     float: left;
     line-height: 1.5em;
-    padding: 0em 1em 1em 1em;
+    padding: 0em 10em 1em 1em;
     text-indent: 2em;
+    text-align: justify;
 }
 
 /*  Grid of 6 system */
@@ -145,40 +146,12 @@ section[class^='span_']{
     width: 45%;
 }
 
-/*
-p.about{
-    clear: both;
-    float: left;
-    line-height: 1.15em;
-    padding: 0.5em 0em 0.5em 0em;
-    text-indent: 1em;
-}
-
-.edu{
-    float: left;
-    line-height: 1.15em;
-    padding: 2em 0em 2em 0em;
-}
-
-.tech, .hob{
-    line-height: 1.15em;
-}
-
-section.tech{
-    1em 1em 1em 1em;
-}
-
-section.hob{
-    padding: 28.7em 1em 1em 1em;
-}
-*/
-
 /*about.html ordered and unordered list styles*/
-/*
 ul{
     list-style: none;
     clear: both;
     float: left;
+    padding: 0em 10em 1em 1em;
 }
 
 li.u::before{
@@ -209,7 +182,6 @@ li.o::before{
 li{
     counter-increment: li;
 }
-*/
 
 /*contact.html section styles*/
 /*
@@ -247,11 +219,14 @@ i{
     padding: 0.5em;
 }
 
-/*index.html and projects.html footer section styles*/
+/*Footer section styles*/
 section.end{
-    clear: both;
-    margin-left: 41em;
-    margin-right: 30em;
+  clear: both;
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin-left: 41em;
+  margin-right: 30em; 
 }
 
 /*Last nav styles*/
@@ -281,27 +256,6 @@ a.nav:link{
     font-weight: bold; 
 }
 /* Extra padding on last nav link */
-
 .last-nav a:first-of-type {
     padding-left: 6%;
 }
-
-
-/*index.html article styles*/
-/*
-article.wrapperone{
-    width: 80%;
-    float: left;
-    text-align: justify; 
-    text-indent: 1em;
-    margin: 1em 9em 1em 9em;   
-} 
-*/
-
-/*index.html p styles*/
-/*
-p.index{
-    line-height: 1.5em;
-    padding: 2em 0em 2em 0em;
-}
-*/
