@@ -99,11 +99,11 @@ h2{
     font-family: 'Amita', cursive;
 }
 
-/*p.prpjects styles*/
-p.projects{
+/*p.projects styles*/
+.projects, .index{
     clear: both;
     float: left;
-    line-height: 1.15em;
+    line-height: 1.5em;
     padding: 0em 1em 1em 1em;
     text-indent: 2em;
 }
