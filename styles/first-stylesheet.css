@@ -3,262 +3,299 @@ Header & Footer background: #ccccff
 Main article background: #e6e6ff*/
 
 /* Body styles */
+
 body {
-    font-family: "Arial", Arial, sans-serif;
-    font-weight: 400;
-    background-color: #f5f9eb;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 400;
+  background-color: #f5f9eb;
 }
 
 /*Background image styles*/
-img.back{
-    width: 100vmax;
-    min-width: 100vmin;
-    opacity: 0.2;
-    position: absolute;
+
+img.back {
+  width: 100vmax;
+  min-width: 100vmin;
+  opacity: 0.2;
+  position: absolute;
 }
 
 /*General styles*/
-.clearfix:after{
-    content:"";
-    display: block;
-    clear: both;
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
 
-article.content-wrapper{
-    display: inline-block;
-    position: absolute;
-    width: 100vmax;
-    min-width: 100vmin;
+article.content-wrapper {
+  display: inline-block;
+  position: absolute;
+  width: 100vmax;
+  min-width: 100vmin;
 }
 
 /*Header1, with use of GoogleFont*/
-h1{
-    clear: both;
-    float: left;
-    margin: 1.8em 2em 0.5em 2em;
-    font-size: 2.4rem;
-    font-family: 'Amita', cursive;
-} 
+
+h1 {
+  clear: both;
+  float: left;
+  margin: 1.8em 2em 0.5em 2em;
+  font-size: 2.4rem;
+  font-family: 'Amita', cursive;
+}
 
 /*Main nav styles*/
-nav.main-nav{
-    float: right;
-    display: flex;
-    justify-content:space-around;
-    width: 40%;
-    margin: 4em 2em 1em 2em;
+
+nav.main-nav {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 4em 2em 1em 2em;
 }
 
 /*All navigation styles*/
-a.nav:link{
-    color:blue;
-    font-size: 16px;
-    padding: 0.75em;
-    text-decoration: none;
-    font-weight: bold;
-}
-a.nav:visited{
-    color:black;
+
+a.nav:link {
+  color: blue;
+  font-size: 16px;
+  padding: 0.75em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a.nav:hover{
-    color: darkblue;
+a.nav:visited {
+  color: black;
+}
+
+a.nav:hover {
+  color: darkblue;
 }
 
 /* Float the elements, center link content, width on links, set font color */
+
 .main-nav a {
-    float: left;
-    width: 13%; 
-    padding: 0.5rem;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold; 
+  float: left;
+  width: 13%;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Extra padding on first nav link */
+
 .main-nav a:first-of-type {
-    padding-left: 6%;
+  padding-left: 6%;
 }
 
 article.main {
-    position: relative;
-    padding: 0em 0em 0em 10em;
+  position: relative;
+  padding: 0em 0em 0em 10em;
 }
 
 /*Header 2 styles*/
-h2{
-    clear: both;
-    float: left;
-    margin: 1em;
-    font-size: 24px;
-    font-family: 'Amita', cursive;
+
+h2 {
+  clear: both;
+  float: left;
+  margin: 1em;
+  font-size: 24px;
+  font-family: 'Amita', cursive;
 }
 
 /*p.projects styles*/
-.about, .projects, .index{
-    clear: both;
-    float: left;
-    line-height: 1.5em;
-    padding: 0em 10em 1em 1em;
-    text-indent: 2em;
-    text-align: justify;
+
+.about,
+.projects,
+.index {
+  clear: both;
+  float: left;
+  line-height: 1.5em;
+  padding: 0em 10em 1em 1em;
+  text-indent: 2em;
+  text-align: justify;
 }
 
 /*  Grid of 6 system */
+
 .span_6_of_6 {
-	width: 97%;
+  width: 97%;
 }
 
 .span_5_of_6 {
-  	width: 81.16%;
+  width: 81.16%;
 }
 
 .span_4_of_6 {
-  	width: 64.33%;
+  width: 64.33%;
 }
 
 .span_3_of_6 {
-  	width: 47.5%;
+  width: 47.5%;
 }
 
 .span_2_of_6 {
-  	width: 30.66%;
+  width: 30.66%;
 }
 
 .span_1_of_6 {
-  	width: 13.83%;
+  width: 13.83%;
 }
 
 /* Float all of the grid divs */
-section[class^='span_']{ 
-    float: left;
-    margin: 1%;
+
+section[class^='span_'] {
+  float: left;
+  margin: 1%;
 }
 
 /*Adjust all images to fit 70% of their grid and to the same height*/
-.one, .two, .four, .five, .six, .seven, .eight, .nine { 
-    height: 10em;
-    width: 45%;
+
+.one,
+.two,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven {
+  height: 10em;
+  width: 45%;
 }
 
 /*about.html ordered and unordered list styles*/
-ul{
-    list-style: none;
-    clear: both;
-    float: left;
-    padding: 0em 10em 1em 1em;
+
+ul {
+  list-style: none;
+  clear: both;
+  float: left;
+  padding: 0em 10em 1em 1em;
 }
 
-li.u::before{
-    content: "•";
-    color: black;
-    padding: 0em 1.4em 0em 0em;
-    text-align: right;
-    direction: rtl;
+li.u::before {
+  content: "•";
+  color: black;
+  padding: 0em 1.4em 0em 0em;
+  text-align: right;
+  direction: rtl;
 }
 
-ol{
-    list-style: none;
-    counter-reset: li;
-    clear: both;
-    float: left;
+ol {
+  list-style: none;
+  counter-reset: li;
+  clear: both;
+  float: left;
 }
 
-li.o::before{
-    content: counter(li);
-    color: black;
-    display: inline-block;
-    width: 1em;
-    margin-left: 1em;
-    text-align: right;
-    direction: rtl;
+li.o::before {
+  content: counter(li);
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+  text-align: right;
+  direction: rtl;
 }
 
-li{
-    counter-increment: li;
+li {
+  counter-increment: li;
 }
 
 /*contact section styles*/
-section.contact{
-    clear: both;
-    float: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 14em;
-    text-align: center;
-    border-radius: 1em;
-    padding: 4em;
-    overflow: hidden;
-    box-shadow: 0em 2em 2em rgba(0,0,0,0.3);
-    margin: 2em 30em 4em 34em;
+
+section.contact {
+  clear: both;
+  float: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 14em;
+  text-align: center;
+  border-radius: 1em;
+  padding: 4em;
+  overflow: hidden;
+  box-shadow: 0em 2em 2em rgba(0, 0, 0, 0.3);
+  margin: 2em 30em 4em 34em;
 }
 
-input{
-    padding: 0.25em;
-    margin: 0.25em;
+input {
+  padding: 0.25em;
+  margin: 0.25em;
 }
 
 /*Article for copyright and last modified styles. Use of second GoogleFont*/
-article.footer{
-    clear: both;
-    float: left;
-    font-size: 10px;
-    text-align: center;
-    padding: 2em 0em 1em 0em;
-    width: 100%;
-    font-family: 'Merienda', cursive;
+
+article.footer {
+  clear: both;
+  float: left;
+  font-size: 10px;
+  text-align: center;
+  padding: 2em 0em 1em 0em;
+  width: 100%;
+  font-family: 'Merienda', cursive;
 }
 
 /*FontAwesome styles*/
-i{
-    height: 10%;
-    width: 10%;
-    padding: 0.5em;
+
+i {
+  height: 10%;
+  width: 10%;
+  padding: 0.5em;
 }
 
 /*Footer section styles*/
-section.end{
+
+section.end {
   clear: both;
   display: block;
   position: relative;
   bottom: 0;
   margin-left: 41em;
-  margin-right: 30em; 
+  margin-right: 30em;
 }
 
 /*Last nav styles*/
-nav.last-nav{
-    float: right;
-    display: flex;
-    justify-content:space-around;
-    width: 40%;
-    margin: 1em 2em 1em 2em;
+
+nav.last-nav {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 1em 2em 1em 2em;
 }
+
 /*All navigation styles*/
-a.nav:link{
-    color:blue;
-    font-size: 16px;
-    padding: 0.75em;
-    text-decoration: none;
-    font-weight: bold;
+
+a.nav:link {
+  color: blue;
+  font-size: 16px;
+  padding: 0.75em;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 /* Float the elements, center link content, width on links, set font color */
+
 .last-nav a {
-    float: left;
-    width: 13%; 
-    padding: 0.5rem;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold; 
+  float: left;
+  width: 13%;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
+
 /* Extra padding on last nav link */
+
 .last-nav a:first-of-type {
-    padding-left: 6%;
+  padding-left: 6%;
 }
