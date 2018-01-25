@@ -26,11 +26,31 @@
     </header>
 
     <section class="contact">
-      <form action="#" method="get">
-        First Name<input type="text" name="firstname" class="first"> Last Name<input type="text" name="lastname" class="last"> E-mail
-        <input type="text" name="phonenumber" class="email"> Subject
-        <input type="submit" value="Submit" class="subject">
-        <textarea id="subject" name="subject" placeholder="Subject" style="height:300px"></textarea>
+      <form method="GET">
+
+        <label>
+          First Name<input type="text" name="firstname" required> 
+        </label>
+        <br>
+
+        <label>
+          Last Name<input type="text" name="lastname"> 
+        </label>
+        <br>
+
+        <label>
+          E-mail
+          <input type="email" name="mail" placeholder="someone@example.com" required>
+        </label>
+        <br>
+
+        <label class="area"><p class="contact">Please detail your questions bellow.</p>
+          <br>
+          <textarea name="question" cols="50" rows="20" maxlength="40"></textarea>
+        </label>
+        <br>
+
+        <input type="submit" value="Submit">
       </form>
     </section>
 

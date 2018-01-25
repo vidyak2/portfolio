@@ -211,25 +211,37 @@ li {
 
 /*contact section styles*/
 
+input {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+}
+
+textarea {
+  border-radius: 0.5em;
+}
+
 section.contact {
   clear: both;
   float: left;
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 14em;
+  width: 20em;
   text-align: center;
   border-radius: 1em;
   padding: 4em;
   overflow: hidden;
   box-shadow: 0em 2em 2em rgba(0, 0, 0, 0.3);
-  margin: 2em 30em 4em 34em;
+  margin: 2em 30em 4em 32em;
 }
 
-input {
-  padding: 0.25em;
-  margin: 0.25em;
+p.contact {
+  line-height: 1em;
+  text-align: justify;
+  text-indent: 2em;
 }
+
 
 /*Article for copyright and last modified styles. Use of second GoogleFont*/
 
