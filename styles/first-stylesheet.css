@@ -1,13 +1,13 @@
 /* Colors for all the pages:
 Header & Footer background: #ccccff
-Main article background: #e6e6ff*/
+Main article background: #f5f5ff*/
 
 /* Body styles */
 
 body {
   font-family: "Arial", Arial, sans-serif;
   font-weight: 400;
-  background-color: #f5f9eb;
+  background-color: #f5f5ff;
 }
 
 /*Background image styles*/
@@ -15,7 +15,7 @@ body {
 img.back {
   width: 100vmax;
   min-width: 100vmin;
-  opacity: 0.2;
+  opacity: 0.1;
   position: absolute;
 }
 
@@ -203,6 +203,8 @@ li.o::before {
   margin-left: 1em;
   text-align: right;
   direction: rtl;
+  padding: 0.5rem;
+  text-indent: 2rem;
 }
 
 li {
