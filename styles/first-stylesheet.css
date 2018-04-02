@@ -1,54 +1,111 @@
 /* Colors for all the pages:
 Header & Footer background: #ccccff
-Main article background: #f5f5ff*/
+Main article background: #e1e1ea*/
+
+/*General styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Body styles */
 
 body {
-  font-family: "Arial", Arial, sans-serif;
-  font-weight: 400;
-  background-color: #f5f5ff;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #e1e1ea;
 }
 
 /*Background image styles*/
 
+/*
 img.back {
   width: 100vmax;
   min-width: 100vmin;
   opacity: 0.1;
   position: absolute;
 }
+*/
 
-/*General styles*/
+/* TOP HEADER (NAV + H1) */
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
+/* Parent element */
+
+div.nav {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
-.clear {
-  clear: both;
+/* Children element #1 */
+
+nav {
+  /*
+  align-self: flex-end;
+  flex-wrap: wrap;
+
+  padding: 1rem;
+*/
+  align-self: center;
+  margin-left: auto;
+  margin-right: 2rem;
+
+  padding: 0.5rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.2);
 }
 
+/* Parent element */
+
+nav a {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+}
+
+/* Children elements of ul */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*
 article.content-wrapper {
   display: inline-block;
   position: absolute;
   width: 100vmax;
   min-width: 100vmin;
 }
+*/
 
 /*Header1, with use of GoogleFont*/
 
+/*
 h1 {
   clear: both;
   float: left;
   margin: 1.8em 2em 0.5em 2em;
   font-size: 2.4rem;
-  font-family: 'Amita', cursive;
+  font-family: 'Heebo', sans-serif;
 }
+*/
 
 /*Main nav styles*/
+
+/*
 
 nav.main-nav {
   float: right;
@@ -57,9 +114,11 @@ nav.main-nav {
   width: 40%;
   margin: 4em 2em 1em 2em;
 }
+*/
 
 /*All navigation styles*/
 
+/*
 a.nav:link {
   color: blue;
   font-size: 16px;
@@ -75,8 +134,11 @@ a.nav:visited {
 a.nav:hover {
   color: darkblue;
 }
+*/
 
 /* Float the elements, center link content, width on links, set font color */
+
+/*
 
 .main-nav a {
   float: left;
@@ -87,8 +149,11 @@ a.nav:hover {
   text-align: center;
   font-weight: bold;
 }
+*/
 
 /* Extra padding on first nav link */
+
+/*
 
 .main-nav a:first-of-type {
   padding-left: 6%;
@@ -98,8 +163,11 @@ article.main {
   position: relative;
   padding: 0em 0em 0em 10em;
 }
+*/
 
 /*Header 2 styles*/
+
+/*
 
 h2 {
   clear: both;
@@ -108,9 +176,11 @@ h2 {
   font-size: 24px;
   font-family: 'Amita', cursive;
 }
+*/
 
 /*p.projects styles*/
 
+/*
 .about,
 .projects,
 .index {
@@ -121,8 +191,11 @@ h2 {
   text-indent: 2em;
   text-align: justify;
 }
+*/
 
 /*  Grid of 6 system */
+
+/*
 
 .span_6_of_6 {
   width: 97%;
@@ -147,16 +220,21 @@ h2 {
 .span_1_of_6 {
   width: 13.83%;
 }
+*/
 
 /* Float all of the grid divs */
+
+/*
 
 section[class^='span_'] {
   float: left;
   margin: 1%;
 }
+*/
 
 /*Adjust all images to fit 70% of their grid and to the same height*/
 
+/*
 .one,
 .two,
 .four,
@@ -170,8 +248,11 @@ section[class^='span_'] {
   height: 10em;
   width: 45%;
 }
+*/
 
 /*about.html ordered and unordered list styles*/
+
+/*
 
 ul {
   list-style: none;
@@ -220,8 +301,11 @@ li.oabout::before {
   text-align: right;
   direction: rtl;
 }
+*/
 
 /*contact section styles*/
+
+/*
 
 input {
   padding: 0.5em;
@@ -253,73 +337,31 @@ p.contact {
   text-align: justify;
   text-indent: 2em;
 }
+*/
 
+/* Footer section styles (using flexbox) */
 
-/*Article for copyright and last modified styles. Use of second GoogleFont*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin: auto;
+}
 
 article.footer {
-  clear: both;
-  float: left;
+  flex-grow: 1;
+
   font-size: 10px;
+  font-family: 'Heebo', sans-serif;
   text-align: center;
-  padding: 2em 0em 1em 0em;
-  width: 100%;
-  font-family: 'Merienda', cursive;
+
+  padding: 1rem;
 }
-
-/*FontAwesome styles*/
-
-i {
-  height: 10%;
-  width: 10%;
-  padding: 0.5em;
-}
-
-/*Footer section styles*/
 
 section.end {
-  clear: both;
-  display: block;
-  position: relative;
-  bottom: 0;
-  margin-left: 41em;
-  margin-right: 30em;
-}
+  flex-grow: 1;
 
-/*Last nav styles*/
-
-nav.last-nav {
-  float: right;
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin: 1em 2em 1em 2em;
-}
-
-/*All navigation styles*/
-
-a.nav:link {
-  color: blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Float the elements, center link content, width on links, set font color */
-
-.last-nav a {
-  float: left;
-  width: 13%;
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* Extra padding on last nav link */
-
-.last-nav a:first-of-type {
-  padding-left: 6%;
+  align-self: center;
 }
