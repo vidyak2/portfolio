@@ -17,181 +17,141 @@ body {
   background-color: #e1e1ea;
 }
 
-/*Background image styles*/
-
-/*
-img.back {
-  width: 100vmax;
-  min-width: 100vmin;
-  opacity: 0.1;
-  position: absolute;
-}
-*/
-
-/* TOP HEADER (NAV + H1) */
+/* Header styles (nav) */
 
 /* Parent element */
 
 div.nav {
+  background-color: #e7e7ee;
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
 }
 
-/* Children element #1 */
+/* Children element */
 
 nav {
-  /*
-  align-self: flex-end;
+  width: 100%;
   flex-wrap: wrap;
+  padding: 0.5rem 2rem;
 
-  padding: 1rem;
-*/
-  align-self: center;
-  margin-left: auto;
+  margin-left: 2rem;
   margin-right: 2rem;
-
-  padding: 0.5rem;
-  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.2);
 }
 
 /* Parent element */
 
-nav a {
+ul {
   display: flex;
-  flex-direction: row;
-
   flex-wrap: wrap;
-
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* Children elements of ul */
 
+li {
+  padding: 0.5rem;
+}
+
 a {
   color: black;
+  font-weight: 600;
+
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-/*
-article.content-wrapper {
-  display: inline-block;
-  position: absolute;
-  width: 100vmax;
-  min-width: 100vmin;
-}
-*/
-
-/*Header1, with use of GoogleFont*/
-
-/*
-h1 {
-  clear: both;
-  float: left;
-  margin: 1.8em 2em 0.5em 2em;
-  font-size: 2.4rem;
-  font-family: 'Heebo', sans-serif;
-}
-*/
-
-/*Main nav styles*/
-
-/*
-
-nav.main-nav {
-  float: right;
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin: 4em 2em 1em 2em;
-}
-*/
-
-/*All navigation styles*/
-
-/*
-a.nav:link {
-  color: blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a.nav:visited {
-  color: black;
-}
-
-a.nav:hover {
+a:visited {
   color: darkblue;
 }
-*/
 
-/* Float the elements, center link content, width on links, set font color */
-
-/*
-
-.main-nav a {
-  float: left;
-  width: 13%;
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-}
-*/
-
-/* Extra padding on first nav link */
-
-/*
-
-.main-nav a:first-of-type {
-  padding-left: 6%;
+a:hover {
+  color: white;
 }
 
-article.main {
+/* Main styles */
+
+/* Parent element */
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+}
+
+/* HOME PAGE */
+
+/* Children elements */
+
+.home {
+  font-size: 38px;
+  font-family: 'Heebo', sans-serif;
+  align-self: flex-start;
+  padding: 4rem 0rem;
+
   position: relative;
-  padding: 0em 0em 0em 10em;
 }
-*/
 
-/*Header 2 styles*/
+.phome {
+  font-size: 24px;
+  font-family: 'Heebo', sans-serif;
 
-/*
+  padding: 0.5rem;
+
+  align-self: center;
+}
+
+.phomearrow {
+  font-size: 24px;
+  font-family: 'Heebo', sans-serif;
+
+  padding: 0.5rem;
+
+  align-self: flex-end;
+}
+
+/* ABOUT PAGE */
+
+/* Children elements */
+
+h1 {
+  font-size: 30px;
+  font-family: 'Heebo', sans-serif;
+
+  margin: 1rem 0rem;
+}
+
+.main {
+  align-self: center;
+  flex-wrap: wrap;
+  padding: 0rem 1rem 1rem 1rem;
+}
 
 h2 {
-  clear: both;
-  float: left;
-  margin: 1em;
+  padding: 1rem 0rem 1rem 0rem;
+
   font-size: 24px;
-  font-family: 'Amita', cursive;
+  font-family: 'Heebo', sans-serif;
 }
-*/
 
-/*p.projects styles*/
-
-/*
-.about,
-.projects,
-.index {
-  clear: both;
-  float: left;
+.pabout {
   line-height: 1.5em;
-  padding: 0em 10em 1em 1em;
-  text-indent: 2em;
+  text-indent: 2rem;
+
   text-align: justify;
 }
-*/
+
+ol {
+  list-style: inside;
+}
+
+ol li {
+  padding: 0.5rem;
+}
+
+
 
 /*  Grid of 6 system */
 
@@ -365,3 +325,17 @@ section.end {
 
   align-self: center;
 }
+
+
+
+
+/*Background image styles*/
+
+/*
+img.back {
+  width: 100vmax;
+  min-width: 100vmin;
+  opacity: 0.1;
+  position: absolute;
+}
+*/
