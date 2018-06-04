@@ -13,7 +13,7 @@ Main article background: #e1e1ea*/
 /* Body styles */
 
 body {
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Heebo', sans-serif;
   background-color: white;
 }
 
@@ -55,7 +55,7 @@ li {
 
 a {
   color: black;
-  font-weight: 600;
+/*  font-weight: 600;*/
 
   text-decoration: none;
 }
@@ -88,7 +88,8 @@ a:hover {
 
 .home {
   font-size: 38px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto',
+  sans-serif;
   /*  font-family: 'Heebo', sans-serif;*/
   align-self: flex-start;
   padding: 4rem 0rem;
@@ -124,7 +125,8 @@ a:hover {
 
 h1 {
   font-size: 30px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo',
+  sans-serif;
 
   margin: 1rem 0rem;
 }
