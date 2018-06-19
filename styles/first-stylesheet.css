@@ -53,6 +53,12 @@ li {
   padding: 0.5rem;
 }
 
+.u {
+  padding: 0.5rem;
+  margin-left: 3rem;
+  list-style: circle;
+}
+
 a {
   color: black;
   /*  font-weight: 600;*/
@@ -131,6 +137,7 @@ h1 {
 }
 
 .main {
+  width: 100%;
   align-self: center;
   flex-wrap: wrap;
   padding: 0rem 1rem 1rem 1rem;
@@ -156,6 +163,7 @@ ol {
 
 ol li {
   padding: 0.5rem;
+  list-style: none;
 }
 
 /* PROJECTS PAGE */
@@ -217,6 +225,7 @@ ol li {
 
 /* CONTACT PAGE */
 
+/*
 input {
   padding: 0.25rem;
   margin: 0.25rem;
@@ -226,6 +235,20 @@ input {
 textarea {
   border-radius: 0.25rem;
 }
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactlarge {
+  height: 6rem;
+}
+
+div a {}
+*/
 
 /* FOOTER */
 
