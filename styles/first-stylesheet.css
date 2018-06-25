@@ -10,19 +10,21 @@ Main article background: #e1e1ea*/
   box-sizing: border-box;
 }
 
+
 /* BODY */
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
 }
+
 
 /* HEADER */
 
 /* Parent element */
 
 div.nav {
-  background-color: #ffa366;
+  background-color: #b3c6ff;
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -37,6 +39,15 @@ nav {
 
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    padding: 1rem 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 /* Parent element */
@@ -61,18 +72,22 @@ li {
 
 a {
   color: black;
-  /*  font-weight: 600;*/
+  font-weight: bolder;
   text-decoration: none;
 }
 
 a:visited {
-  /*  color: darkblue;*/
-  color: black;
+  color: darkblue;
 }
 
 a:hover {
   color: darkblue;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
 
 /* MAIN */
 
@@ -87,15 +102,49 @@ a:hover {
   padding: 2rem 4.5rem 2rem 4.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Children elements */
+
+h1 {
+  font-size: 30px;
+  margin: 1rem 0rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+.main {
+  width: 100%;
+  align-self: center;
+  flex-wrap: wrap;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+h2 {
+  padding: 1rem 0rem 1rem 0rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
 /* HOME PAGE */
 
 /* Children elements */
 
 .home {
   font-size: 38px;
-  font-family: 'Roboto',
-  sans-serif;
-  /*  font-family: 'Heebo', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   align-self: flex-start;
   padding: 4rem 0rem;
 
@@ -105,7 +154,6 @@ a:hover {
 .phome {
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
-  /*  font-family: 'Heebo', sans-serif;*/
   padding: 0.5rem;
 
   align-self: center;
@@ -118,36 +166,24 @@ a:hover {
 
 .phomearrow {
   font-size: 24px;
-  /*  font-family: 'Heebo', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   padding: 5rem;
 
   align-self: flex-end;
 }
 
+
 /* ABOUT PAGE */
 
 /* Children elements */
 
-h1 {
-  font-size: 30px;
-  font-family: 'Heebo',
-  sans-serif;
-
-  margin: 1rem 0rem;
+.title {
+  display: flex;
 }
 
-.main {
-  width: 100%;
-  align-self: center;
-  flex-wrap: wrap;
-  padding: 0rem 1rem 1rem 1rem;
-}
-
-h2 {
-  padding: 1rem 0rem 1rem 0rem;
-
-  font-size: 24px;
-  font-family: 'Heebo', sans-serif;
+.title a {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
 }
 
 .pabout {
@@ -159,14 +195,29 @@ h2 {
 
 ol {
   list-style: inside;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-ol li {
-  padding: 0.5rem;
-  list-style: none;
+.liabout {
+  padding: 0rem;
 }
+
+.liabouttwo {
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 468px) {
+  .liabouttwo {
+    padding: 0rem;
+  }
+}
+
 
 /* PROJECTS PAGE */
+
+/* Parent element */
 
 .items {
   display: flex;
@@ -175,11 +226,24 @@ ol li {
   justify-content: space-between;
 }
 
+/* Children elements */
+
 .imgcontainer {
   padding: 1rem;
   position: relative;
   width: 20rem;
   height: auto;
+}
+
+@media screen and (max-width: 815px) {
+  .imgcontainer {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: auto;
+    height: auto;
+  }
 }
 
 .imgcontainer h3 {
@@ -195,6 +259,38 @@ ol li {
   width: 18rem;
 }
 
+@media screen and (max-width: 815px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+  }
+}
+
 .over {
   position: absolute;
   top: 0;
@@ -206,7 +302,7 @@ ol li {
 
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #9999ff;
+  background-color: #b3c6ff;
 }
 
 .imgcontainer:hover .over {
@@ -223,32 +319,6 @@ ol li {
   text-align: center;
 }
 
-/* CONTACT PAGE */
-
-/*
-input {
-  padding: 0.25rem;
-  margin: 0.25rem;
-  border-radius: 0.25rem;
-}
-
-textarea {
-  border-radius: 0.25rem;
-}
-
-.contact {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.contactlarge {
-  height: 6rem;
-}
-
-div a {}
-*/
 
 /* FOOTER */
 
@@ -271,8 +341,11 @@ article.footer {
   padding: 1rem;
 }
 
-section.end {
+.end {
   flex-grow: 1;
-
   align-self: center;
+}
+
+.end a {
+  padding: 0.5rem;
 }
