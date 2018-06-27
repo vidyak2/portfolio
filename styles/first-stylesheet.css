@@ -18,16 +18,26 @@ body {
   background-color: white;
 }
 
+.background {
+  background-image: url("../Images/IMG_4098.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 /* HEADER */
 
 /* Parent element */
 
 div.nav {
-  background-color: #b3c6ff;
+  background-color: #c2cdf0;
+  /*  background-color: #808080;*/
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
+
+  opacity: 0.96;
 }
 
 /* Children element */
@@ -81,7 +91,11 @@ a:visited {
 }
 
 a:hover {
-  color: darkblue;
+  color: black;
+}
+
+nav a {
+  color: white;
 }
 
 .underline {
@@ -142,6 +156,11 @@ h2 {
 
 /* Children elements */
 
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
 .home {
   font-size: 38px;
   font-family: 'Roboto', sans-serif;
@@ -149,6 +168,20 @@ h2 {
   padding: 4rem 0rem;
 
   position: relative;
+
+
+  color: white;
+
+}
+
+.circleimage {
+  align-self: flex-end;
+
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+
+  padding: 2rem;
 }
 
 .phome {
@@ -157,6 +190,10 @@ h2 {
   padding: 0.5rem;
 
   align-self: center;
+
+
+  color: white;
+
 }
 
 .emphasis {
@@ -170,6 +207,7 @@ h2 {
   padding: 5rem;
 
   align-self: flex-end;
+  color: white;
 }
 
 
@@ -331,12 +369,26 @@ footer {
   margin: auto;
 }
 
-article.footer {
+.footerhome {
   flex-grow: 1;
 
   font-size: 10px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+  line-height: 1rem;
+
+  padding: 1rem;
+
+  color: white;
+}
+
+.footer {
+  flex-grow: 1;
+
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1rem;
 
   padding: 1rem;
 }
