@@ -1,325 +1,426 @@
 /* Colors for all the pages:
-Header & Footer background: #ccccff
-Main article background: #f5f5ff*/
+Header & Footer background: #c2cdf0
+Main background: white*/
 
-/* Body styles */
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* BODY */
 
 body {
-  font-family: "Arial", Arial, sans-serif;
-  font-weight: 400;
-  background-color: #f5f5ff;
+  font-family: 'Open-Sans', sans-serif, 'Arial', sans-serif;
+  background-color: white;
 }
 
-/*Background image styles*/
-
-img.back {
-  width: 100vmax;
-  min-width: 100vmin;
-  opacity: 0.1;
-  position: absolute;
+.background {
+  background-image: url("../Images/IMG_4098.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/*General styles*/
+/* HEADER */
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
+/* Parent element */
+
+div.nav {
+  background-color: #c2cdf0;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  opacity: 0.96;
 }
 
-.clear {
-  clear: both;
+/* Children element */
+
+nav {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-article.content-wrapper {
-  display: inline-block;
-  position: absolute;
-  width: 100vmax;
-  min-width: 100vmin;
+@media screen and (max-width: 540px) {
+  nav {
+    padding: 1rem 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
-/*Header1, with use of GoogleFont*/
+/* Parent element */
 
-h1 {
-  clear: both;
-  float: left;
-  margin: 1.8em 2em 0.5em 2em;
-  font-size: 2.4rem;
-  font-family: 'Amita', cursive;
-}
-
-/*Main nav styles*/
-
-nav.main-nav {
-  float: right;
+ul {
   display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin: 4em 2em 1em 2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/*All navigation styles*/
+/* Children elements of ul */
 
-a.nav:link {
-  color: blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
+li {
+  padding: 0.5rem;
 }
 
-a.nav:visited {
+.u {
+  padding: 0.5rem;
+  margin-left: 3rem;
+  list-style: circle;
+}
+
+a {
   color: black;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
-a.nav:hover {
+a:visited {
   color: darkblue;
 }
 
-/* Float the elements, center link content, width on links, set font color */
-
-.main-nav a {
-  float: left;
-  width: 13%;
-  padding: 0.5rem;
+a:hover {
   color: black;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
 }
 
-/* Extra padding on first nav link */
+/* Different font color for the navigation, since background color is darker */
 
-.main-nav a:first-of-type {
-  padding-left: 6%;
+nav a {
+  color: white;
 }
 
-article.main {
-  position: relative;
-  padding: 0em 0em 0em 10em;
+nav a:visited {
+  color: black;
 }
 
-/*Header 2 styles*/
+/* Link in text is underlined */
+
+.underline {
+  text-decoration: underline;
+}
+
+
+/* MAIN */
+
+/* Parent element */
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+}
+
+/* Resize container */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Children elements */
+
+h1 {
+  font-size: 30px;
+  margin: 1rem 0rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+.main {
+  width: 100%;
+  align-self: center;
+  flex-wrap: wrap;
+  padding: 0rem 1rem 1rem 1rem;
+}
 
 h2 {
-  clear: both;
-  float: left;
-  margin: 1em;
+  padding: 1rem 0rem 1rem 0rem;
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  font-family: 'Amita', cursive;
+  font-weight: 900;
 }
 
-/*p.projects styles*/
 
-.about,
-.projects,
-.index {
-  clear: both;
-  float: left;
+/* HOME PAGE */
+
+/* Children elements */
+
+.home {
+  font-size: 38px;
+  font-family: 'Roboto', sans-serif;
+  align-self: flex-start;
+  padding: 4rem 0rem;
+
+  position: relative;
+
+
+  color: white;
+
+}
+
+.phome {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem;
+
+  align-self: center;
+
+
+  color: white;
+
+}
+
+.emphasis {
+  font-size: 60px;
+  font-family: 'Montez', cursive;
+}
+
+.phomearrow {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5rem;
+
+  align-self: flex-end;
+  color: white;
+}
+
+
+/* ABOUT PAGE */
+
+/* Children elements */
+
+.title {
+  display: flex;
+}
+
+.title a {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.pabout {
   line-height: 1.5em;
-  padding: 0em 10em 1em 1em;
-  text-indent: 2em;
+  text-indent: 2rem;
+
   text-align: justify;
 }
 
-/*  Grid of 6 system */
+/* List styles */
 
-.span_6_of_6 {
-  width: 97%;
-}
-
-.span_5_of_6 {
-  width: 81.16%;
-}
-
-.span_4_of_6 {
-  width: 64.33%;
-}
-
-.span_3_of_6 {
-  width: 47.5%;
-}
-
-.span_2_of_6 {
-  width: 30.66%;
-}
-
-.span_1_of_6 {
-  width: 13.83%;
-}
-
-/* Float all of the grid divs */
-
-section[class^='span_'] {
-  float: left;
-  margin: 1%;
-}
-
-/*Adjust all images to fit 70% of their grid and to the same height*/
-
-.one,
-.two,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven {
-  height: 10em;
-  width: 45%;
-}
-
-/*about.html ordered and unordered list styles*/
-
-ul {
-  list-style: none;
-  clear: both;
-  float: left;
-  padding: 0em 10em 1em 1em;
-}
-
-li.u::before {
-  content: "•";
-  color: black;
-  padding: 0em 1.4em 0em 0em;
-  text-align: right;
-  direction: rtl;
+.olabout {
+  list-style: inside;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 ol {
-  list-style: none;
-  counter-reset: li;
-  clear: both;
-  float: left;
+  list-style: inside;
 }
 
-li.o::before {
-  content: counter(li);
-  color: black;
-  display: inline-block;
-  width: 1em;
-  margin-left: 1em;
-  text-align: right;
-  direction: rtl;
-  padding: 0.5rem;
-  text-indent: 2rem;
+.liabout {
+  padding: 0rem;
 }
 
-li {
-  counter-increment: li;
+.liabouttwo {
+  padding-left: 1rem;
 }
 
-li.oabout::before {
-  content: counter(li);
-  color: black;
-  display: inline-block;
-  width: 1em;
-  margin-left: 1em;
-  text-align: right;
-  direction: rtl;
+@media screen and (max-width: 468px) {
+  .liabouttwo {
+    padding: 0rem;
+  }
 }
 
-/*contact section styles*/
 
-input {
-  padding: 0.5em;
-  margin: 0.5em;
-  border-radius: 0.5em;
-}
+/* PROJECTS PAGE */
 
-textarea {
-  border-radius: 0.5em;
-}
+/* Parent element */
 
-section.contact {
-  clear: both;
-  float: left;
-  position: relative;
+.items {
   display: flex;
-  flex-direction: column;
-  width: 20em;
-  text-align: center;
-  border-radius: 1em;
-  padding: 4em;
-  overflow: hidden;
-  box-shadow: 0em 2em 2em rgba(0, 0, 0, 0.3);
-  margin: 2em 30em 4em 32em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-p.contact {
-  line-height: 1em;
-  text-align: justify;
-  text-indent: 2em;
-}
+/* Children elements */
 
-
-/*Article for copyright and last modified styles. Use of second GoogleFont*/
-
-article.footer {
-  clear: both;
-  float: left;
-  font-size: 10px;
-  text-align: center;
-  padding: 2em 0em 1em 0em;
-  width: 100%;
-  font-family: 'Merienda', cursive;
-}
-
-/*FontAwesome styles*/
-
-i {
-  height: 10%;
-  width: 10%;
-  padding: 0.5em;
-}
-
-/*Footer section styles*/
-
-section.end {
-  clear: both;
-  display: block;
+.imgcontainer {
+  padding: 1rem;
   position: relative;
+  width: 20rem;
+  height: auto;
+}
+
+@media screen and (max-width: 815px) {
+  .imgcontainer {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: auto;
+    height: auto;
+  }
+}
+
+.imgcontainer h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+}
+
+@media screen and (max-width: 815px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+  }
+}
+
+.over {
+  position: absolute;
+  top: 0;
   bottom: 0;
-  margin-left: 41em;
-  margin-right: 30em;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #b3c6ff;
 }
 
-/*Last nav styles*/
-
-nav.last-nav {
-  float: right;
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin: 1em 2em 1em 2em;
+.imgcontainer:hover .over {
+  opacity: 0.96;
 }
 
-/*All navigation styles*/
-
-a.nav:link {
-  color: blue;
-  font-size: 16px;
-  padding: 0.75em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Float the elements, center link content, width on links, set font color */
-
-.last-nav a {
-  float: left;
-  width: 13%;
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
+.textover {
+  color: white;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-weight: bold;
 }
 
-/* Extra padding on last nav link */
 
-.last-nav a:first-of-type {
-  padding-left: 6%;
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  padding: 1rem;
+  margin: auto;
+}
+
+.footerhome {
+  flex-grow: 1;
+
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1rem;
+
+  padding: 1rem;
+
+  color: white;
+}
+
+.footer {
+  flex-grow: 1;
+
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1rem;
+
+  padding: 1rem;
+}
+
+.end {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.end a {
+  padding: 0.5rem;
+}
+
+/* Home page footer styles: color: white for icons */
+
+.fa-arrow-circle-right {
+  color: white;
+}
+
+.endhome {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.endhome a {
+  padding: 0.5rem;
+}
+
+.endhome .fa-github-square {
+  color: white;
+}
+
+.endhome .fa-linkedin {
+  color: white;
 }
