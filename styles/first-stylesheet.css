@@ -93,9 +93,17 @@ a:hover {
   color: black;
 }
 
+/* Different font color for the navigation, since background color is darker */
+
 nav a {
   color: white;
 }
+
+nav a:visited {
+  color: black;
+}
+
+/* Link in text is underlined */
 
 .underline {
   text-decoration: underline;
@@ -170,16 +178,6 @@ h2 {
 
 }
 
-.circleimage {
-  align-self: flex-end;
-
-  border-radius: 50%;
-  width: 40%;
-  height: 40%;
-
-  padding: 2rem;
-}
-
 .phome {
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
@@ -227,11 +225,17 @@ h2 {
   text-align: justify;
 }
 
-ol {
+/* List styles */
+
+.olabout {
   list-style: inside;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+ol {
+  list-style: inside;
 }
 
 .liabout {
@@ -396,4 +400,27 @@ footer {
 
 .end a {
   padding: 0.5rem;
+}
+
+/* Home page footer styles: color: white for icons */
+
+.fa-arrow-circle-right {
+  color: white;
+}
+
+.endhome {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.endhome a {
+  padding: 0.5rem;
+}
+
+.endhome .fa-github-square {
+  color: white;
+}
+
+.endhome .fa-linkedin {
+  color: white;
 }
