@@ -1,6 +1,6 @@
 /* Colors for all the pages:
-Header & Footer background: #ccccff
-Main article background: #e1e1ea*/
+Header & Footer background: #c2cdf0
+Main background: white*/
 
 /* GENERAL */
 
@@ -14,7 +14,7 @@ Main article background: #e1e1ea*/
 /* BODY */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif, 'Arial', sans-serif;
   background-color: white;
 }
 
@@ -32,7 +32,6 @@ body {
 
 div.nav {
   background-color: #c2cdf0;
-  /*  background-color: #808080;*/
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -116,6 +115,8 @@ nav a {
   padding: 2rem 4.5rem 2rem 4.5rem;
 }
 
+/* Resize container */
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 2rem;
@@ -155,11 +156,6 @@ h2 {
 /* HOME PAGE */
 
 /* Children elements */
-
-.top {
-  display: flex;
-  flex-direction: row;
-}
 
 .home {
   font-size: 38px;
