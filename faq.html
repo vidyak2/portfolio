@@ -4,71 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <title>faq.html</title>
+  <!-- Force mobile browsers to display at the size of the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Amita|Merienda" rel="stylesheet">
-  <script src="https://use.fontawesome.com/d3b7bc5f60.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montez|Open+Sans|Roboto" rel="stylesheet">
+
+  <!-- Font Awesome CDN Link -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
-  <article class="content-wrapper">
-    <header>
-      <h1>Frequently Asked Questions (FAQ)</h1>
-      <nav class="main-nav">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html">Contact</a>
+  <header>
+    <div class="nav">
+      <!--Main nav-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!--<li><a href="interests.html">Other Interests</a></li>-->
+          <li><a href="faq.html">FAQ</a></li>
+          <!--          <li><a href="contact.html">Contact</a></li>-->
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <article class="container">
+    <h1>FAQ</h1>
     <article class="main">
       <h2>What is the process between typing a URL into a browser and the site finishing loading?</h2>
 
-      <section class="span_6_of_6 ">
-        <p class="about">On a day-to-day basis, website names are typed into the browser of a device, such as a computer, a tablet, or a phone and the user expects the browser to return the contents of the website. Each website is identified by a Uniform Resource Locator (URL), which is directly related to a resource on the web. A single URL is usually linked to a single resource (MDN web docs, 2018). Between the moment when a URL is typed, and the site loads, many steps have to happen on the back-end. Though this process seems simple, it consists of a collaboration of many elements.</p>
-        <p class="about">The process between typing the URL and the website loading is a relationship between the client and the server, where the client is any device that is connected to the internet and the server is the base where websites and apps are contained. It is important to note that having an internet connection is necessary, since it permits the sending and receiving of data. The client and the server interact in a way that the client sends requests to the server, and the server answers to the needs of the client (MDN web docs, 2017). Although this is the crux of the process, many elements contribute to accomplish the task of loading a webpage on the device of the user.</p>
-        <p class="about">The process between typing the URL and the loaded website appearing can be explained in five steps (MDN web docs, 2017). The first step is typing the web page name into the browser. The web page name consists of the protocol and the domain name. For example, the URL http://www.google.com can be separated into the protocol, which is http, and the rest is the domain name. The protocol indicates the method of communication within the computer network, and is usually “http”, and “https” in a secure browser. The HTTP protocol will be described further below. In this example, the domain name is “www.google.com”, which is the unique name of the website (MDN web docs, 2018).</p>
-        <p class="about">The second step is finding the real address of the server where the website is present. This is done with the help of the domain name server (DNS), which links the web address typed as a string in the browser, to the correct IP address. The IP address is the location where the page can be found, and this is represented by a compilation of numbers. This address follows the format: #.#.#.#.</p>
-        <p class="about">The third step is sending an HTTP (Hypertext Transfer Protocol) request message from the browser to the server. This will allow a version of the website to be available to the client. The HTTP sets the language of communication between the client and the server. These messages are sent through internet connection, using the Transmission Control Protocol (TCP) and the Internet Protocol (IP).</p>
-        <p class="about">The fourth step is sending the website files from the server to the browser. This is sent in small pieces, called data packets.</p>
-        <p class="about">The final step is that the browser will put all the pieces in order, and present the website (MDN web docs, 2017).</p>
+      <section>
+        <p class="pabout">On a day-to-day basis, website names are typed into the browser of a device, such as a computer, a tablet, or a phone and the user expects the browser to return the contents of the website. Each website is identified by a Uniform Resource Locator (URL), which is directly related to a resource on the web. A single URL is usually linked to a single resource (MDN web docs, 2018). Between the moment when a URL is typed, and the site loads, many steps have to happen on the back-end. Though this process seems simple, it consists of a collaboration of many elements.</p>
+        <p class="pabout">The process between typing the URL and the website loading is a relationship between the client and the server, where the client is any device that is connected to the internet and the server is the base where websites and apps are contained. It is important to note that having an internet connection is necessary, since it permits the sending and receiving of data. The client and the server interact in a way that the client sends requests to the server, and the server answers to the needs of the client (MDN web docs, 2017). Although this is the crux of the process, many elements contribute to accomplish the task of loading a webpage on the device of the user.</p>
+        <p class="pabout">The process between typing the URL and the loaded website appearing can be explained in five steps (MDN web docs, 2017). The first step is typing the web page name into the browser. The web page name consists of the protocol and the domain name. For example, the URL http://www.google.com can be separated into the protocol, which is http, and the rest is the domain name. The protocol indicates the method of communication within the computer network, and is usually “http”, and “https” in a secure browser. The HTTP protocol will be described further below. In this example, the domain name is “www.google.com”, which is the unique name of the website (MDN web docs, 2018).</p>
+        <p class="pabout">The second step is finding the real address of the server where the website is present. This is done with the help of the domain name server (DNS), which links the web address typed as a string in the browser, to the correct IP address. The IP address is the location where the page can be found, and this is represented by a compilation of numbers. This address follows the format: #.#.#.#.</p>
+        <p class="pabout">The third step is sending an HTTP (Hypertext Transfer Protocol) request message from the browser to the server. This will allow a version of the website to be available to the client. The HTTP sets the language of communication between the client and the server. These messages are sent through internet connection, using the Transmission Control Protocol (TCP) and the Internet Protocol (IP).</p>
+        <p class="pabout">The fourth step is sending the website files from the server to the browser. This is sent in small pieces, called data packets.</p>
+        <p class="pabout">The final step is that the browser will put all the pieces in order, and present the website (MDN web docs, 2017).</p>
       </section>
 
       <h2>Bibliography</h2>
-      <section class="span_6_of_6 ">
+      <section>
         <ol>
-          <li class="o">MDN web docs. (2016). What is a domain name? Retrieved from MDN web docs: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name</li>
-          <li class="o">MDN web docs. (2017). How the Web works. Retrieved from MDN web docs: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works</li>
-          <li class="o">MDN web docs. (2018). What is a URL? Retrieved from MDN web docs: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL</li>
+          <li>MDN web docs. (2016). What is a domain name? Retrieved from MDN web docs: <a class="underline" href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name</a></li>
+          <li>MDN web docs. (2017). How the Web works. Retrieved from MDN web docs: <a class="underline" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works</a></li>
+          <li>MDN web docs. (2018). What is a URL? Retrieved from MDN web docs: <a class="underline" href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL</a></li>
         </ol>
       </section>
     </article>
-
-    <footer>
-      <article class="footer">
-        <p class="foot ">&copy; 2018 || Vidya Krishnan</p>
-        <p class="foot ">Last modified on <time datetime="2018-03-18 ">March 18 2018</time></p>
-      </article>
-
-      <section class="end">
-        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fa fa-github " aria-hidden="true"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true "></i></a>
-      </section>
-
-      <nav class="last-nav ">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html ">Contact</a>
-      </nav>
-    </footer>
   </article>
+
+  <footer>
+    <article class="footerhome">
+      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
+      <p class="foot">Last modified on <time datetime="2018-06-27">June 27 2018</time></p>
+    </article>
+
+    <section class="end">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true "></i></a>
+    </section>
+  </footer>
 </body>
 
 </html>
