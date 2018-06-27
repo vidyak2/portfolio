@@ -4,56 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>index.html</title>
+
+  <!-- Force mobile browsers to display at the size of the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Amita|Merienda" rel="stylesheet">
-  <script src="https://use.fontawesome.com/d3b7bc5f60.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montez|Open+Sans|Roboto" rel="stylesheet">
+
+  <!-- Font Awesome CDN Link -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
-  <img class="back" src="Images/background.JPG" alt="background">
-  <article class="content-wrapper">
 
-    <header>
-      <h1>Front-End Web Development</h1>
-      <nav class="main-nav">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html">Contact</a>
+<body class="background">
+
+  <header>
+    <div class="nav">
+      <!--Main nav-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <article class="main">
-      <section class="span_6_of_6">
-        <p class="index">Currently, I am a student at University of Washington, in web development. I enjoy the challenges in the field, and have started learning HTML5 and CSS3, permitting me to create various web pages. Links to these projects can be found<a class="nav" href="projects.html">here.</a>For more information on my background, click<a class="nav" href="about.html">here.</a></p>
-      </section>
-    </article>
+  <!-- Main Section -->
+  <section class="container">
+    <h1 class="home">Looking for a Front-End Web Developer ?</h1>
 
+    <p class="phome">My name is <b class="emphasis">Vidya</b> and I love creating fresh and creative websites.</p>
+    <p class="phomearrow">Explore my work <a href="projects.html"><i class="fas fa-arrow-circle-right"></i></a></p>
+
+    <!-- Footer -->
     <footer>
-      <article class="footer">
+      <article class="footerhome">
         <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-        <p class="foot">Last modified on <time datetime="2018-03-14">March 14 2018</time></p>
+        <p class="foot">Last modified on <time datetime="2018-06-27">June 27 2018</time></p>
       </article>
 
-      <section class="end">
-        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fa fa-github " aria-hidden="true"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true "></i></a>
+      <!-- Footer Links -->
+      <section class="endhome">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
       </section>
 
-      <nav class="last-nav ">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html ">Contact</a>
-      </nav>
     </footer>
-  </article>
+  </section>
 </body>
 
 </html>
