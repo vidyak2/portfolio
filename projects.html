@@ -4,140 +4,133 @@
 <head>
   <meta charset="UTF-8">
   <title>projects.html</title>
+
+  <!-- Force mobile browsers to display at the size of the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Amita|Merienda" rel="stylesheet">
-  <script src="https://use.fontawesome.com/d3b7bc5f60.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montez|Open+Sans|Roboto" rel="stylesheet">
+
+  <!-- Font Awesome CDN Link -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
-  <img class="back" src="Images/background.JPG" alt="background">
-  <article class="content-wrapper">
-    <header>
-      <h1>Web Development Projects</h1>
-      <nav class="main-nav">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html">Contact</a>
+  <header>
+    <div class="nav">
+      <!--Main nav-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
+
+  <article class="container">
+    <h1>Web Development Projects</h1>
 
     <article class="main">
+      <!-- Projects Section-->
       <h2>2017-2018</h2>
 
-      <section class="span_6_of_6">
-        <p class="projects">Accross my studies in web development, I have created several different type of web pages. Below are the various websites designed.</p>
-      </section>
+      <section class="items">
+        <!-- Div with the title, link, image, and hover over text-->
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/bakingproject/" target="_blank">
+            <h3>Baking Website</h3>
+            <img class="image" src="Images/baking.png" alt="Baking Website">
+            <div class="over">
+              <p class="textover">Passion Project</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/week1/"><img class="one" src="Images/weekone.png" alt="First assignment."></a>
-          <figcaption>
-            <p>Semantic Tags</p>
-          </figcaption>
-        </figure>
-      </section>
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/fesc_redesign/" target="_blank">
+            <h3>FESC Redesign</h3>
+            <img class="image" src="Images/redesign.png" alt="Capstone Project: FESC Redesign">
+            <div class="over">
+              <p class="textover">Capstone Project: Koala, Google Charts, APIs & Vue.js</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/portfolio-1/"><img class="two" src= "Images/weektwo.png" alt= "Second assignment"></a>
-          <figcaption>
-            <p>Portfolio Site</p>
-          </figcaption>
-        </figure>
-      </section>
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/html200-ecommerce-project/" target="_blank">
+            <h3>E-Commerce Website</h3>
+            <img class="image" src="Images/winterscarves.png" alt="E-Commerce Website">
+            <div class="over">
+              <p class="textover">JavaScript</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/Mockup-Assignment/"><img class="four" src= "Images/weekfour.png" alt= "Fourth assignment"></a>
-          <figcaption>
-            <p>Implement a Mockup</p>
-          </figcaption>
-        </figure>
-      </section>
+        <div class="imgcontainer">
+          <a href="https://halleyl.github.io/stp-archery/index.html" target="_blank">
+            <h3>'Client' Site Plan and HTML</h3>
+            <img class="image" src="Images/archery.png" alt="'Client' Site Plan and HTML">
+            <div class="over">
+              <p class="textover">Group Project</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/current-portfolio"><img class="five" src= "Images/weekfive.png" alt= "Fifth assignment"></a>
-          <figcaption>
-            <p>Attractive Portfolio Site</p>
-          </figcaption>
-        </figure>
-      </section>
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/portfolio-bootstrap/interests.html#" target="_blank">
+            <h3>Interests Page</h3>
+            <img class="image" src="Images/bootstrap.png" alt="Interests Page">
+            <div class="over">
+              <p class="textover">Bootstrap</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/modular-product-listing/"><img class="six" src="Images/weeksix.png" alt="Sixth assignment"></a>
-          <figcaption>
-            <p>Interactive CSS</p>
-          </figcaption>
-        </figure>
-      </section>
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/Mockup-Assignment/" target="_blank">
+            <h3>Mockup Project</h3>
+            <img class="image" src="Images/mockup.png" alt="Mockup Project">
+            <div class="over">
+              <p class="textover">CSS</p>
+            </div>
+          </a>
+        </div>
 
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://halleyl.github.io/stp-archery/index.html"><img class="eight" src="Images/weekeight.png" alt="Eigth assignment"></a>
-          <figcaption>
-            <p>"Client" Site Plan and HTML</p>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/portfolio-bootstrap/interests.html#"><img class="nine" src="Images/weeknine.png" alt="Ninth assignment"></a>
-          <figcaption>
-            <p>Bootstrap in Portfolio Site</p>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/responsive-web-design/"><img class="ten" src="Images/weekten.png" alt="Tenth assignment"></a>
-          <figcaption>
-            <p>Responsive Web Design and the Advantages</p>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="span_2_of_6">
-        <figure>
-          <a href="https://vidyak2.github.io/looping/"><img class="eleven" src="Images/weekeleven.png" alt="Eleventh assignment"></a>
-          <figcaption>
-            <p>Introduction to JavaScript and While loops</p>
-          </figcaption>
-        </figure>
+        <div class="imgcontainer">
+          <a href="https://vidyak2.github.io/modular-product-listing/" target="_blank">
+            <h3>Modular Product Listing</h3>
+            <img class="image" src="Images/modularproduct.png" alt="Forms">
+            <div class="over">
+              <p class="textover">Interactive CSS</p>
+            </div>
+          </a>
+        </div>
       </section>
 
     </article>
-
-    <footer>
-      <article class="footer">
-        <p class="foot">&copy; 2018 || Vidya Krishnan</p>
-        <p class="foot">Last modified on <time datetime="2018-03-14">March 14 2018</time></p>
-      </article>
-
-      <section class="end">
-        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fa fa-github " aria-hidden="true"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true "></i></a>
-      </section>
-
-      <nav class="last-nav ">
-        <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="about.html">About</a>
-        <a class="nav" href="projects.html">Projects</a>
-        <a class="nav" href="interests.html">Other Interests</a>
-        <a class="nav" href="faq.html">FAQ</a>
-        <a class="nav" href="contact.html ">Contact</a>
-      </nav>
-    </footer>
-
   </article>
+
+  <footer>
+    <article class="footerhome">
+      <p class="foot">&copy; 2018 || Vidya Krishnan</p>
+      <p class="foot">Last modified on <time datetime="2018-06-27">June 27 2018</time></p>
+    </article>
+
+    <section class="end">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true "></i></a>
+    </section>
+  </footer>
+
+  <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
