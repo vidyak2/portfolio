@@ -15,7 +15,7 @@ Main background: white*/
 
 body {
   font-family: 'Open-Sans', sans-serif, 'Arial', sans-serif;
-  background-color: white;
+  background-color: #D8D8D8;
 }
 
 .background {
@@ -24,12 +24,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
 }
 
 /* HEADER */
 
 /* Parent element */
 
+/*
 div.nav {
   background-color: #c2cdf0;
   width: 100%;
@@ -38,24 +40,41 @@ div.nav {
 
   opacity: 0.96;
 }
+*/
+
+.homeheader {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+
+  content: "";
+  position: relative;
+  height: 16rem;
+  background-image: linear-gradient(#ECDB54, #f8d965, #fae596);
+}
+
 
 /* Children element */
 
 nav {
   width: 100%;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
-
+  padding: 1rem 1rem;
+  /*
   margin-left: 2rem;
   margin-right: 2rem;
+*/
 }
 
 @media screen and (max-width: 540px) {
   nav {
     padding: 1rem 1rem;
+    /*
 
     margin-left: 1rem;
     margin-right: 1rem;
+*/
   }
 }
 
@@ -64,7 +83,7 @@ nav {
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 /* Children elements of ul */
@@ -103,6 +122,91 @@ nav a:visited {
   color: black;
 }
 
+.header_polygon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+}
+
+@media(min-width: 700px) {
+  .svg--sm {
+    display: none;
+  }
+}
+
+@media(max-width: 699px) {
+  .svg--lg {
+    display: none;
+  }
+}
+
+@media(max-width: 228px) {
+  .svg--sm {
+    display: none;
+  }
+}
+
+
+/*MAIN PAGES HEADER*/
+
+.title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.habout {
+  width: 34%;
+  padding: 1rem 0rem 0rem 4rem;
+  font-size: 60px;
+  margin: 1rem 0rem;
+  font-family: 'Montez', cursive;
+  font-weight: 900;
+}
+
+.title a {
+  padding-left: 1rem;
+}
+
+.linkhome {
+  width: 90%;
+  padding-top: 3rem;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .habout {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .habout {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .habout {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .habout {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .habout {
+    width: 54%;
+  }
+}
+
+
 /* Link in text is underlined */
 
 .underline {
@@ -110,11 +214,21 @@ nav a:visited {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* MAIN */
 
 /* Parent element */
 
 .container {
+  /*  background-image: linear-gradient(135deg, #777, #111);*/
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -141,7 +255,7 @@ nav a:visited {
 
 h1 {
   font-size: 30px;
-  margin: 1rem 0rem;
+  margin: 0rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
 }
@@ -175,7 +289,7 @@ h2 {
 
 
   color: white;
-
+  /*  color: black;*/
 }
 
 .phome {
@@ -187,7 +301,7 @@ h2 {
 
 
   color: white;
-
+  /*  color: black;*/
 }
 
 .emphasis {
@@ -202,21 +316,13 @@ h2 {
 
   align-self: flex-end;
   color: white;
+  /*  color: black;*/
 }
 
 
 /* ABOUT PAGE */
 
 /* Children elements */
-
-.title {
-  display: flex;
-}
-
-.title a {
-  padding-top: 0.8rem;
-  padding-left: 1rem;
-}
 
 .pabout {
   line-height: 1.5em;

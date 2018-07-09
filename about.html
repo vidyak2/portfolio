@@ -19,7 +19,13 @@
 </head>
 
 <body>
-  <header>
+  <header class="homeheader">
+    <!--Create polygon header-->
+    <svg class="header_polygon" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <!-- (x,y) coordinates of each point -->
+    <polygon class="svg--sm" fill="#D8D8D8" points="0,0 0,60 14,100 20,60 46,100 50,80 60,100 64,60 90,100 92,80 100,100 0,100" />
+    <polygon class="svg--lg" fill="#D8D8D8" points="0,0 30,100 31,100 80,30 100,100 0,100" />Sorry, your browser does not support inline SVG.</svg>
+
     <div class="nav">
       <!--Main nav-->
       <nav>
@@ -31,16 +37,26 @@
         </ul>
       </nav>
     </div>
+
+    <section class="title">
+      <h1 class="habout">Vidya Krishnan</h1>
+      <article class="linkhome">
+        <a href="https://github.com/vidyak2/portfolio.git" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/vidya-k-619a80b4" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      </article>
+    </section>
   </header>
 
   <!-- Main Content -->
   <article class="container">
     <!-- Title with contact links -->
-    <section class="title">
-      <h1>Vidya Krishnan</h1>
-      <a href="https://github.com/vidyak2/portfolio.git" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/vidya-k-619a80b4" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-    </section>
+    <!--
+<section class="title">
+
+  <a href="https://github.com/vidyak2/portfolio.git" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+  <a href="https://www.linkedin.com/in/vidya-k-619a80b4" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+</section>
+-->
 
     <article class="main">
       <h2>Background</h2>
