@@ -1,6 +1,11 @@
 /* Colors for all the pages:
-Header & Footer background: #c2cdf0
-Main background: white*/
+Header background: linear-gradient(#ECDB54, #f8d965, #fae596)
+Main background: #D8D8D8*/
+
+/* Fonts for all the pages:
+Header title: font-family: 'Montez', cursive;
+Main text & navigation: font-family: 'Open-Sans', sans-serif
+Home page font: font-family: 'Roboto', sans-serif (Special font only used on home page to create a clean and visible text over the background image)*/
 
 /* GENERAL */
 
@@ -24,57 +29,53 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
 }
 
 /* HEADER */
 
-/* Parent element */
-
-/*
-div.nav {
-  background-color: #c2cdf0;
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-
-  opacity: 0.96;
-}
-*/
+/*Parent element*/
 
 .homeheader {
-  display: flex;
-  flex-wrap: wrap;
-
-  flex-direction: column;
-
-  content: "";
+  display: inline-block;
   position: relative;
-  height: 16rem;
+  width: 100%;
   background-image: linear-gradient(#ECDB54, #f8d965, #fae596);
+  transform: skewY(-4deg);
+  transform-origin: top left;
 }
 
-
-/* Children element */
+/* Children element #1 of header */
 
 nav {
+  position: relative;
   width: 100%;
   flex-wrap: wrap;
-  padding: 1rem 1rem;
-  /*
-  margin-left: 2rem;
-  margin-right: 2rem;
-*/
+  padding: 7rem 2rem 0rem 2rem;
 }
 
-@media screen and (max-width: 540px) {
-  nav {
-    padding: 1rem 1rem;
-    /*
+/*Resize navigation*/
 
-    margin-left: 1rem;
-    margin-right: 1rem;
-*/
+@media screen and (max-width: 1140px) {
+  nav {
+    padding: 5rem 2rem 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  nav {
+    padding: 4rem 2rem 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    padding: 3rem 1rem 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  nav {
+    padding: 3rem 1rem 0rem 1rem;
   }
 }
 
@@ -108,73 +109,32 @@ a:visited {
   color: darkblue;
 }
 
-a:hover {
-  color: black;
-}
-
-/* Different font color for the navigation, since background color is darker */
-
-nav a {
-  color: white;
-}
-
 nav a:visited {
   color: black;
 }
 
-.header_polygon {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
-}
-
-@media(min-width: 700px) {
-  .svg--sm {
-    display: none;
-  }
-}
-
-@media(max-width: 699px) {
-  .svg--lg {
-    display: none;
-  }
-}
-
-@media(max-width: 228px) {
-  .svg--sm {
-    display: none;
-  }
-}
-
-
-/*MAIN PAGES HEADER*/
+/* Children element #2 of header */
 
 .title {
+  position: relative;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
 }
 
+/* Children element #1 of .title section */
+
 .habout {
   width: 34%;
-  padding: 1rem 0rem 0rem 4rem;
+  padding: 0rem 0rem 0rem 4rem;
   font-size: 60px;
-  margin: 1rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
   font-family: 'Montez', cursive;
   font-weight: 900;
 }
 
-.title a {
-  padding-left: 1rem;
-}
-
-.linkhome {
-  width: 90%;
-  padding-top: 3rem;
-}
-
+/*Resize h1*/
 
 @media screen and (max-width: 1300px) {
   .habout {
@@ -206,29 +166,52 @@ nav a:visited {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .habout {
+    padding: 0rem 0rem 0rem 2rem;
+  }
+}
 
-/* Link in text is underlined */
+@media screen and (max-width: 620px) {
+  .habout {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+
+/* Children element #2 of .title section (github and linkedin links) */
+
+.title a {
+  padding-left: 1rem;
+}
+
+.linkhome {
+  width: 90%;
+  padding-top: 1rem;
+}
+
+.linkproject {
+  width: 180%;
+  padding-top: 1rem;
+}
+
+.linkfaq {
+  width: 450%;
+  padding-top: 1rem;
+}
+
+
+/* MAIN */
+
+/* Links in text are underlined */
 
 .underline {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* MAIN */
-
 /* Parent element */
 
 .container {
-  /*  background-image: linear-gradient(135deg, #777, #111);*/
+  position: relative;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -287,9 +270,7 @@ h2 {
 
   position: relative;
 
-
   color: white;
-  /*  color: black;*/
 }
 
 .phome {
@@ -299,9 +280,7 @@ h2 {
 
   align-self: center;
 
-
   color: white;
-  /*  color: black;*/
 }
 
 .emphasis {
@@ -316,7 +295,6 @@ h2 {
 
   align-self: flex-end;
   color: white;
-  /*  color: black;*/
 }
 
 
@@ -403,6 +381,8 @@ ol {
   width: 18rem;
 }
 
+/*Resize image*/
+
 @media screen and (max-width: 815px) {
   .image {
     margin-left: auto;
@@ -431,9 +411,11 @@ ol {
   .image {
     margin-left: auto;
     margin-right: auto;
-    width: 16rem;
+    width: 18rem;
   }
 }
+
+/*Text over yellow background, on hover*/
 
 .over {
   position: absolute;
@@ -446,21 +428,21 @@ ol {
 
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #b3c6ff;
+  background-image: linear-gradient(#ECDB54, #f8d965, #fae596)
 }
 
 .imgcontainer:hover .over {
-  opacity: 0.96;
+  opacity: 0.90;
 }
 
 .textover {
-  color: white;
-  font-size: 1.6rem;
+  color: black;
+  font-size: 1.2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
 
 
